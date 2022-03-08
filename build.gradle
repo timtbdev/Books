@@ -1,0 +1,37 @@
+buildscript {
+    ext {
+
+        majorVersion = 1
+        minVersion = 2
+        patchVersion = 0
+
+        appVersionName = "${majorVersion}.${minVersion}.${patchVersion}"
+        appVersionCode  = majorVersion * 1000 + minVersion * 100 + patchVersion
+
+        androidCompileSdkVersion = 32
+        androidMinSdkVersion = 21
+
+        // Dependencies
+        composeVersion = "1.1.1"
+    }
+}
+
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlin.android) apply false
+    alias(libs.plugins.versions.plugin) apply false
+    alias(libs.plugins.detekt.plugin) apply false
+    alias(libs.plugins.ktlint.plugin) apply false
+    alias(libs.plugins.hilt.plugin) apply false
+}
+
+subprojects {
+    apply plugin: libs.plugins.versions.plugin.get().pluginId
+    apply plugin: libs.plugins.detekt.plugin.get().pluginId
+    apply plugin: libs.plugins.ktlint.plugin.get().pluginId
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
