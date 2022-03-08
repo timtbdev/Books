@@ -21,3 +21,14 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Books"
 include ':app'
+include ':core'
+include ':common'
+include ':home'
+include ':home:domain'
+include ':home:interactors'
+include ':home:datasource'
+include ':home:datasource-test'
+include ':home:ui'
+include ':constants'
+include ':home:ui:list'
+include ':home:ui:detail'

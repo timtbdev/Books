@@ -12,6 +12,17 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/constants" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/home" />
+            <option value="$PROJECT_DIR$/home/datasource" />
+            <option value="$PROJECT_DIR$/home/datasource-test" />
+            <option value="$PROJECT_DIR$/home/domain" />
+            <option value="$PROJECT_DIR$/home/interactors" />
+            <option value="$PROJECT_DIR$/home/ui" />
+            <option value="$PROJECT_DIR$/home/ui/detail" />
+            <option value="$PROJECT_DIR$/home/ui/list" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

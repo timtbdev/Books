@@ -73,11 +73,17 @@ dependencies {
     implementation libs.compose.activity
     implementation libs.compose.ui
     implementation libs.compose.material
-    implementation libs.compose.tooling
+    implementation libs.compose.ui.tooling.preview
     implementation libs.compose.navigation
 
     implementation libs.material
 
     implementation libs.hilt.android
     kapt libs.hilt.compiler
+
+    androidTestImplementation libs.compose.junit4
+    androidTestImplementation libs.mockito.kotlin
+    androidTestImplementation libs.mockito.android
+    debugImplementation libs.compose.ui.test
+    debugImplementation libs.compose.ui.tooling
 }

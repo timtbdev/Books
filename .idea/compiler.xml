@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Books.app" target="11" />
+      <module name="Books.common" target="11" />
+      <module name="Books.home.ui.detail" target="11" />
+      <module name="Books.home.ui.list" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
